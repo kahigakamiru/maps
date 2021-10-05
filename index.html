@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>A Simple Google Map</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+	<div class="navbar">
+		<a class="active" href="./index.html"><i class="fa fa-fw fa-home"></i> Home</a>&emsp;
+		<a href="./map.html">&emsp;<i class="fa fa-map-marker" aria-hidden="true"></i>Map</a>&emsp;
+		  <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Map2</a>
+		<!-- <a href="#"><i class="fa fa-fw fa-user"></i> Login</a> -->
+	  </div> 
+	  
+<h1>A Simple Google Map</h1>
+
+<div id="map" style="width:600px; height: 400px;"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+	var map_parameters = { center: {lat:-0.4270885, lng: 36.9455516}, zoom: 8 };
+	var map = new google.maps.Map(document.getElementById('map'), map_parameters);
+</script>
+<p>Click map and map1 to view others</p>
+</body>
+</html>
